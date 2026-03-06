@@ -10,9 +10,6 @@ app.config["JWT_SECRET_KEY"] = "super-secret-key"
 
 jwt = JWTManager(app)
 
-# ================================
-# In-memory user store
-# ================================
 users = {
     "admin": {
         "password": "admin123",
@@ -24,12 +21,6 @@ users = {
     }
 }
 
-# ================================
-# 1. BASIC AUTHENTICATION
-# ================================
-# ================================
-# 1. BASIC AUTHENTICATION
-# ================================
 @app.route("/basic-protected")
 def basic_protected():
 
@@ -59,9 +50,6 @@ def basic_protected():
 
     return jsonify({"error": "Invalid credentials"}), 401
 
-# ================================
-# 2. SIMPLE TOKEN AUTHENTICATION
-# ================================
 @app.route("/token-login", methods=["POST"])
 def token_login():
     data = request.json
@@ -98,9 +86,6 @@ def token_protected():
     return jsonify({"error": "Invalid Token"}), 401
 
 
-# ================================
-# 3. JWT AUTHENTICATION
-# ================================
 @app.route("/jwt-login", methods=["POST"])
 def jwt_login():
 

@@ -1,71 +1,26 @@
-# Flask Authentication Experiment
+Learning Outcomes
 
-This project demonstrates token based authentication using Flask.
+Understand the concept of authentication in web applications.
 
-Authentication methods implemented:
+Learn how to implement Basic Authentication using Authorization headers in Flask.
 
-1. Authorization Header Authentication
-2. Custom Header Authentication
-3. JWT Authentication
+Implement Token-based authentication using custom headers.
 
-------------------------------------
+Generate and validate JWT (JSON Web Tokens) for secure API access.
 
-## Run Locally
+Gain hands-on experience in testing REST APIs using Postman.
 
-Install dependencies
+Learn how to deploy a Flask application on the Render cloud platform.
 
-pip install -r requirements.txt
+Understand how different authentication mechanisms protect API endpoints.
 
-Run server
+## API Testing Screenshots
 
-python app.py
+### Home Route
+![Home Route](screenshots/get.png)
 
-Server runs on
+### Basic Authentication
+![Basic Auth](screenshots/basic_auth.png)
 
-http://localhost:5000
-
-
-------------------------------------
-
-## APIs
-
-Authorization Header
-
-GET /auth-header
-
-Custom Header
-
-GET /custom-header
-
-
-JWT Login
-
-POST /jwt-login
-
-Body:
-{
-"username":"admin",
-"password":"admin123"
-}
-
-
-JWT Protected
-
-GET /jwt-protected
-
-Header:
-
-Authorization: Bearer <token>
-
-------------------------------------
-
-## Testing
-
-All APIs tested using Postman.
-
-
-------------------------------------
-
-## Deployment
-
-Deployed on Render
+### Token / JWT Request
+![Post Request](screenshots/post.png)
