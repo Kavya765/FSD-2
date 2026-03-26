@@ -19,4 +19,7 @@ def get_customer_orders(customer_id):
         "orders": customer["orders"]
     })
 
-app.run(port=5000)
+import os
+
+port = int(os.environ.get("PORT", 5000))
+app.run(host="0.0.0.0", port=port)
