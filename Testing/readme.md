@@ -14,6 +14,15 @@ To perform unit testing for backend APIs using pytest and frontend forms/compone
 ## GitHub Actions Workflow
 ![Actions](screenshots/1.png)
 
+## Running on Port 5000
+![Actions](screenshots/5000.png)
+
+## Docker Terminal
+![Actions](screenshots/terminal.png)
+
+## Running on Port 5005
+![Actions](screenshots/5005.png)
+
 ## Project Structure
 
 ```plaintext
