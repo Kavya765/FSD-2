@@ -26,21 +26,21 @@ jobs:
       - name: Run backend tests
         run: python -m pytest
 
- frontend-test:
-  runs-on: ubuntu-latest
-  defaults:
-    run:
-      working-directory: Final Practical/frontend
+  frontend-test:
+    runs-on: ubuntu-latest
+    defaults:
+      run:
+        working-directory: Final Practical/frontend
 
-  steps:
-    - uses: actions/checkout@v4
+    steps:
+      - uses: actions/checkout@v4
 
-    - uses: actions/setup-node@v4
-      with:
-        node-version: 18
+      - uses: actions/setup-node@v4
+        with:
+          node-version: 18
 
-    - name: Install dependencies
-      run: npm ci
+      - name: Install dependencies
+        run: npm ci
 
-    - name: Run frontend tests
-      run: npm run test
+      - name: Run frontend tests
+        run: npm run test
